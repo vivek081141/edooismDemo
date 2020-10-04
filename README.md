@@ -22,7 +22,8 @@ docker build -f dockerfile -t springboot-app .
 
 # create the container and run it
 docker run --name springboot-hello-world05 -p 8080:8080 b67976e0b289
+
 docker run --name springboot-hello-world05 -p 9090:8080 springboot-app
 
 
-# TODO add a spring docker plugin to automate this step
+## TODO add a spring docker plugin to automate this step
