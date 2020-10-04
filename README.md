@@ -2,7 +2,7 @@
 Spring boot hello world along with steps to run in docker
 
 
-#DockerFile
+# DockerFile
 FROM openjdk:latest
 
 ARG JAR_FILE=target/hello-world-0.0.1-SNAPSHOT.jar
