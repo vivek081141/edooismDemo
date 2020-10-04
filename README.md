@@ -14,15 +14,15 @@ EXPOSE 8080
 ENTRYPOINT ["java","-jar","/app.jar"]
 
 
-#Go to the root directory
+# Go to the root directory
 cd /Users/i350472/workspace/springboot/hello-world
 
-#build the image
+# build the image
 docker build -f dockerfile -t springboot-app .
 
-#create the container and run it
+# create the container and run it
 docker run --name springboot-hello-world05 -p 8080:8080 b67976e0b289
 docker run --name springboot-hello-world05 -p 9090:8080 springboot-app
 
 
-#inspect container
+# TODO add a spring docker plugin to automate this step
